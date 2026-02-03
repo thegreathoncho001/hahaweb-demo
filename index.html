@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Runner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="screen">
+    <h1>NEON RUNNER</h1>
+    <p>Dodge the falling blocks</p>
+    <p>Use ← → arrow keys</p>
+    <button id="startBtn">START GAME</button>
+  </div>
+
+  <!-- GAME UI -->
+  <div id="gameUI" class="hidden">
+    <div class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+    </div>
+
+    <!-- CANVAS (inline style = guaranteed visible) -->
+    <canvas id="gameCanvas" width="400" height="600"
+      style="background:#0b0b0b; border:3px solid #00f7ff; display:block; margin:auto;">
+    </canvas>
+
+    <button id="restartBtn" class="hidden">RESTART</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
